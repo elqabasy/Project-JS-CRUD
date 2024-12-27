@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operations</title>
+
+
+    <!-- Start favicons -->
+    <link type="image/png" sizes="16x16" rel="icon" href="./favicon.ico">
+    <link type="image/png" sizes="32x32" rel="icon" href="./assets/icons/web/icons8-store-isometric-32.png">
+    <link type="image/png" sizes="96x96" rel="icon" href="./assets/icons/web/icons8-store-isometric-96.png">
+    <!-- End favicons -->
+
+
+
+    <!-- Start Links -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/config.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media-query.css">
+    <!-- End Links -->
+
+
+
+</head>
+
+<body data-theme="light" class="bg-accent">
+    <!-- Start Header Section -->
+    <header class="border-bottom rounded">
+        <h1 class="display-3 fw-bold text-center">CRUD</h1>
+    </header>
+    <!-- End Header Section -->
+
+
+    <!-- Start Main Section -->
+    <main class="container">
+        <div class="form p-4 rounded border mt-4">
+            <h3 class="text-primary">Product</h3>
+            <form class="d-flex flex-column justify-content-around gap-3" name="product-form">
+                <div class="form-group">
+                    <label for="ProductName">Product Name:</label>
+                    <input type="text" name="ProductName" class="form-control" id="ProductName" required>
+                </div>
+                <div class="form-group">
+                    <label for="ProductPrice" name="ProductPrice">Product Price:</label>
+                    <input type="text" class="form-control" id="ProductPrice" required>
+                </div>
+                <div class="form-group">
+                    <label for="ProductCategory" name="ProductCategory">Product Category:</label>
+                    <input type="text" class="form-control" id="ProductCategory" required>
+                </div>
+                <div class="form-group">
+                    <label for="ProductDescription" name="ProductDescription">Product Description:</label>
+                    <input type="text" class="form-control" id="ProductDescription">
+                </div>
+                <div class="form-group">
+                    <label for="SiteURL" name="SiteURL">Site URL:</label>
+                    <input type="text" class="form-control" id="SiteURL">
+                </div>
+
+                <!-- <br> -->
+                <div class="actions">
+                    <button type="button" id="btn-add-product" class="btn btn-primary">Add Product</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="content p-4 rounded border mt-4">
+            <h3 class="text-primary">Search</h3>
+            <input class="form-control mr-sm-2 m-auto" type="search" placeholder="Search" aria-label="Search">
+            <table class="table" id="table-data">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col" colspan="3">Product Name</th>
+                        <th scope="col">Product Price</th>
+                        <th scope="col">Product Category</th>
+                        <th scope="col">Product Desc.</th>
+                        <th scope="col">Product Visit</th>
+                        <th scope="col">Product Update</th>
+                        <th scope="col">Product Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <!-- End Main Section -->
+
+    <!-- Start  Footer Section -->
+    <footer>
+        <div class="container w-100 text-center p-2">
+            <span>
+                Created with
+                <span class="text-primary">&hearts;</span>
+                By <a href="https://www.linkedin.com/in/ma7ros">Mahros</a>
+            </span>
+        </div>
+    </footer>
+    <!-- End  Footer Section -->
+
+
+    <!-- Start Scripts -->
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+    <!-- End Scripts -->
+</body>
+
+</html>
